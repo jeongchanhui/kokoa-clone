@@ -1,0 +1,49 @@
+.nav {
+  background-color: var(--background-color);
+  background-image: var(--background-image);
+  padding: 20px;
+}
+
+.nav__list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__btn {
+  position: relative;
+}
+.nav__btn i {
+  color: whitesmoke;
+}
+
+.badge {
+  color: white;
+  font-weight: 500;
+  width: 20px;
+  height: 20px;
+  padding: 5px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: pink;
+}
+
+@keyframes notificationAnimation {
+  0% {
+    transform: none;
+  }
+  50% {
+    transform: translateY(-5px) rotateY(360deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.nav__notification {
+  position: absolute;
+  left: 20px;
+  bottom: 10px;
+  animation: notificationAnimation 3s ease-in-out infinite;
+}
